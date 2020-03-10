@@ -24,7 +24,6 @@ dependencies:
   shared_preferences: ^0.5.3+1
   flutter_launcher_icons: ^0.7.2+1
   flutter_platform_widgets: ^0.12.0
-  firebase_auth: ^0.14.0+5
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -72,5 +71,8 @@ flutter:
     - family:  Elusive
       fonts:
         - asset: assets/Elusive.ttf
+    - family: Doco
+      fonts:
+        - asset: assets/Doco.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

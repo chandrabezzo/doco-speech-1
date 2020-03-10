@@ -3,6 +3,7 @@ import 'package:doco_speech_flutter/constant/app_colors.dart';
 import 'package:doco_speech_flutter/constant/session.dart';
 import 'package:doco_speech_flutter/constant/text_styles.dart';
 import 'package:doco_speech_flutter/dialog_view.dart';
+import 'package:doco_speech_flutter/doco_icons.dart';
 import 'package:doco_speech_flutter/elusive_icons.dart';
 import 'package:doco_speech_flutter/main.dart';
 import 'package:doco_speech_flutter/model/search_model.dart';
@@ -128,16 +129,22 @@ class MenuView extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16)
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => SplashView("pesan")
-                ));
+                // Navigator.push(context, MaterialPageRoute(
+                //   builder: (context) => SplashView("pesan")
+                // ));
+
+                Navigator.pushNamed(context, SplashView.routeName, 
+                  arguments: "Pesannya");
               },
             ),
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Elusive.music),
+        onPressed: (){
+
+        },
+        child: Icon(Doco.heart),
       ),
     );
   }

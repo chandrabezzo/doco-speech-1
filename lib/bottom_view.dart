@@ -48,7 +48,7 @@ class _BottomViewState extends State<BottomView> {
   List<BottomModel> initData(){
     var values = List<BottomModel>();
 
-    for(int counter = 0; counter < 20; counter++){
+    for(int counter = 0; counter < 2; counter++){
       var data = BottomModel(
         id: counter,
         value: "Data ke $counter"
